@@ -2,9 +2,12 @@ import InsectClass as ic
 
 
 def main():
-    bug = ic.Insect()
-    bug.set_flight()
-    print('Insect can fly this many miles: ', bug.get_length_of_flight())
+    mosquito = ic.Insect('mosquito', 2, 6)
+
+    mosquito.set_flight()
+
+    print(
+        f'the {mosquito.get_name()} can fly this many miles: {mosquito.get_length_of_flight()}')
 
 
 main()
